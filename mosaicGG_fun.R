@@ -41,3 +41,16 @@ mosaicGG <- function(data, X, FILL) {
   print(g)
 }
 
+# The following plots are created using data contained within Datacamp's interface
+# BMI described by age (as previously seen)
+mosaicGG(adult, X = "SRAGE_P", FILL = "RBMI")
+
+# Poverty described by age
+mosaicGG(adult, X = "SRAGE_P", FILL = "POVLL")
+
+# mtcars: am described by cyl
+mosaicGG(mtcars, "cyl","am")
+
+# Vocab: vocabulary described by education
+library(carData)
+mosaicGG(Vocab, "education", "vocabulary")
